@@ -5,3 +5,4 @@ GHaumCube64
    :maxdepth: 2
 
    sujet.rst
+   protocoles.rst
