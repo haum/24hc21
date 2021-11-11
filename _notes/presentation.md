@@ -14,7 +14,7 @@ Cube ou hexaèdre régulier, le seul des cinq solides de Platon, ayant exactemen
 64
 --
 
-c'est '8*8 ou 2*32 ou 4*16 ou 4 au cube ! c'est aussi le nombre de point lumineux qu'il est possible de piloter dans le cube présenté justa avant !
+c'est 8x8 ou 2x32 ou 4x16 ou encore 4 au cube ! c'est aussi le nombre de point lumineux qu'il est possible de piloter dans le cube présenté juste avant !
 
 GHaumCube64
 -----------
