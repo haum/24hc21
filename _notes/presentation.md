@@ -14,11 +14,10 @@ Cube
 
 Cube ou hexaèdre régulier, le seul des cinq solides de Platon, ayant exactement 6 faces, 12 arêtes et 8 sommets et c'est la forme de l'installation qui servira de support a ce sujet
 
-
 64
 ``
-c'est '8*8 ou 2*32 ou 4*16 ou 4 au cube ! c'est aussi le nombre de point lumineux qu'il est possible de piloter dans le cube présenté justa avant !
 
+c'est '8*8 ou 2*32 ou 4*16 ou 4 au cube ! c'est aussi le nombre de point lumineux qu'il est possible de piloter dans le cube présenté justa avant !
 
 GHaumCube64
 ```````````
