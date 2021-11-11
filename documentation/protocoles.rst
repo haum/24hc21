@@ -4,7 +4,7 @@ Protocoles
 Cube
 ----
 
-Le cube est piloté via le protocole sACN (ou E1.31), un standard de contrôle populaire dans le milieu des techniciens du spectacle. Il permet de piloter des éclairages (couleur, position de miroir, choix de gobo, ouverture d'iris, etc.) voire d'autres appareils comme des pompes de machine à fumée.
+Le cube est piloté via le protocole sACN (ou E1.31), un standard de contrôle populaire dans le milieu du spectacle. Il permet de piloter des éclairages (couleur, position de miroir, choix de gobo, ouverture d'iris, etc.) voire d'autres appareils comme des pompes de machine à fumée.
 
 Chaque élément à piloter peut recevoir une valeur de 8 bits sur un `canal`. Un même appareil peut consommer plusieurs canaux s'il a besoin de plusieurs valeurs. Lorsqu'il y a plus de 512 canaux dans une installation (c'est le cas ici), les données sont réparties sur plusieurs `univers`.
 
