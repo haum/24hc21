@@ -1,7 +1,7 @@
 Reseau
 ======
 
-Pour interagir avec la structure et les télécommandes les participants devrons se connecter sur le reseau wifi '24hc21' avec le mot de passe '24hv2021'
+Pour interagir avec la structure et les télécommandes les participants devrons se connecter sur le reseau wifi '24hc21' avec le mot de passe '24hc2021'
 
 
 Protocoles
