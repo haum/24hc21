@@ -1,11 +1,11 @@
-Reseau
-======
-
-Pour interagir avec la structure et les télécommandes les participants devrons se connecter sur le reseau wifi '24hc21' avec le mot de passe '24hc2021'
-
-
 Protocoles
 ==========
+
+Reseau
+------
+
+Pour interagir avec la structure et les télécommandes les participants devront se connecter sur le reseau wifi '24hc21' avec le mot de passe '24hc2021'
+
 
 Cube
 ----
@@ -20,13 +20,17 @@ Chaque élément à piloter peut recevoir une valeur de 8 bits sur un `canal`. U
 
 Dans le cube, les canaux sont utilisés pour définir l'intensité de chaque couleur dans les leds de celui-ci.
 
- - Chaque led consomme 3 canaux pour les intensités des couleurs rouge, vert et bleu.
+ - Chaque led utilise 3 canaux pour les intensités des couleurs rouge, vert et bleu.
  - Chaque tål est constitué de 3 leds (donc 9 canaux)
- - Les canaux sont contigüs et répartis sur deux univers (576 canaux, répartis sur l'ensemble de l'univers 1 et les premiers canaux de l'univers 2)
+ - Toutes les LEDs d'un même tål sont adressées sur des canaux contigüs
+ - Les tåls sont répartis sur deux univers (576 canaux au total, 510 sur les premiers canaux de l'univers 1 et le reste sur les premiers canaux de l'univers 2)
 
-Par exemple, le canal 11 de l'univers 1 définit l'intensité de la couleur verte de la led 4 (qui est située dans le tål 2).
+Par exemple, le canal 11 de l'univers 1 définit ainsi l'intensité de la couleur verte de la led 4 (qui est située dans le tål 2).
 
-La position spaciale des leds et tåls est à relever vous-même sur la structure.
+La position spatiale des leds et tåls est à relever vous-même sur la structure.
+
+La commande du cube se fait **uniquement en multicast** pour nous permettre de monitorer le
+réseau et de vérifier le *source name*.
 
 
 Télécommandes
@@ -35,9 +39,21 @@ Télécommandes
 Généralités
 ```````````
 
-Le protocole a été développé spécialement pour l'évènement. Chaque télécommande dispose d'un port TCP 540 ouvert en écoute. Un seul client peut être connecté à la fois (une nouvelle connexion déconnecte l'ancien utilisateur). La communication a lieu en mode textuel avec une valeur par ligne. La mention "24HC21 remote" est envoyée à la connexion.
+Le protocole a été développé spécialement pour l'évènement. Chaque télécommande dispose d'un port TCP 540 ouvert en écoute. Un seul client peut être connecté à la fois (une nouvelle connexion déconnecte l'ancien utilisateur, soyez courtois). La communication a lieu en mode textuel avec une valeur par ligne. La mention "24HC21 remote" est envoyée à la connexion.
 
 .. image:: _static/remote_board.jpg
+
+Adresses IP
+```````````
+====== =====
+Numéro IP
+====== =====
+1      192.168.88.241
+2      192.168.88.242
+3      192.168.88.243
+4      192.168.88.244
+5      192.168.88.245
+====== =====
 
 Boutons
 ```````
@@ -50,3 +66,10 @@ Leds
 ````
 
 La télécommande interprète les nombres envoyés sur la liaison TCP. Lorsque ceux-ci sont compris entre 0 et 7 inclus, elle allume ses leds en considérant les bits de la valeur. Par exemple, lorsque la valeur est 6, elle allume ses leds 1 et 2 (``6 = 2^2 + 2^1``).
+
+.. note::
+
+   Par défaut, les LED clignotent en phase lors de la tentative de connexion, puis à tour
+   de rôle lorsque la télécommande est connectée au réseau. Elles s'éteignent lorsque qu'un programme se connecte à la télécommande.
+
+   Lorsque la connexion est impossible, les leds sont allumées et fixes: appelez nous.

@@ -6,10 +6,10 @@ Le HAUM met à disposition une structure originale, lumineuse, géante, cubique,
 Ressources
 ----------
 
- - un cube lumineux commandable par le réseau (protocole E1.31 / sACN)
- - dix télécommandes en réseau (protocole textuel pour l'évènement)
+ - un cube lumineux commandable par le réseau (protocole E1.31 / sACN) formé de 64 tåls (prononcez [to:l]).
+ - plusieurs télécommandes en réseau (protocole textuel pour l'évènement)
  - la présente documentation
-    
+
 Déroulement
 -----------
 
@@ -57,4 +57,4 @@ Saison 3 : À votre imagination
 
 .. note::
 
-   Il est **vivement** recommandé (bonus) aux équipes programmant dans un même langage de définir ensemble un protocole d'interopérabilité permettant de réunir leurs créations dans un même programme à la fin de l'épreuve.
+   Il est **vivement** recommandé (bonus) aux équipes programmant dans un même langage de définir ensemble un protocole d'interopérabilité (API) permettant de réunir leurs créations dans un même programme à la fin de l'épreuve.
