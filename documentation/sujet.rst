@@ -8,6 +8,7 @@ Ressources
 
  - un cube lumineux commandable par le réseau (protocole E1.31 / sACN) formé de 64 tåls (prononcez [to:l]).
  - plusieurs télécommandes en réseau (protocole textuel pour l'évènement)
+ - une enceinte amplifiée
  - la présente documentation
 
 Déroulement
