@@ -6,3 +6,4 @@ GHaumCube64
 
    sujet.rst
    protocoles.rst
+   position_tals.rst
